@@ -1,0 +1,14 @@
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+def maximumProfit(prices):
+    minimum = maxsize
+    profit = 0
+    for p in prices:
+        if p<minimum:
+            minimum=p
+        else:
+            profit = max(profit, p-minimum)
+    return profit
